@@ -1,20 +1,4 @@
-h1{
-    background-color: hwb(75 4% 36%);
-}
-.just{
-    text-align: justify;
-}
-.word{
-    font-weight: bold;
-}
 
-a{
-    text-decoration:none;
-}
-
-.para{
-    text-decoration:underline;
-}
 /* body{
     background-image: url(https://img.freepik.com/free-photo/2d-graphic-wallpaper-with-colorful-grainy-gradients_23-2151001501.jpg?t=st=1703432150~exp=1703435750~hmac=a9cd179ca16e560a155f95f6e7b41e8703db026a18b0be5b593c919cbc6d9aaf&w=360);
     background-repeat: repeat-x; 
@@ -23,17 +7,30 @@ a{
 } */
 
 body{
-    background: linear-gradient(to bottom, #f0f00c,#2ed9bc,#e80759);
+    background: linear-gradient(to bottom,  #FF671F,white,#046A38);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
     /* background: conic-gradient(from 0deg, yellow,violet,green,yellow); */
     /* background: radial-gradient(circle at center,rgb(109, 6, 109) 20%,rgb(53, 189, 234),yellow) */
     /* background: radial-gradient(circle at center, red 0, blue, green 100%) */
     /* background: radial-gradient(circle at center in hsl longer hue, red 0, blue, green 100%); */
-    /* background-size:contain;
-    background-repeat: no-repeat;
+    /*background-size:contain;
     background-position: center; */
 }
 
-img{
-    height: 200px;
-    width: 200px;
+table{
+    border: 2px solid black;
+    width: 75%;
+    text-align: center;
+    margin: auto;
+}
+table td{
+    width: 50%;
+    border: 2px solid black;
+    padding: 0.5%;
+}
+table th{
+    border: 2px solid black;
+    padding:1.2%;
+    text-decoration: underline;
 }

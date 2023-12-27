@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <title>Job Application</title>
+    <title>JOB APPLICATION FORM</title>
     <link rel="stylesheet" href="formstyle.css">
   </head>
 
@@ -45,19 +45,19 @@
             <label for="dat">DOB: </label>
             <input type="date" name="birthdate" id="dat" placeholder="Enter you DOB">
             <br><br>
-            <h2>Select your Gender: </h2>
+            <p id="p">Select your Gender: </p>
             <input type="radio" name="gender" id="malee" checked>
             <label for="malee">Male</label>
-            <br><br>
             <input type="radio" name="gender" id="fmalee">
             <label for="fmalee">Female</label>
 
         </section>
         <br><hr>
         <section>
-            <table style="width: 100%; display: flex; flex-direction:column;">
+            <table style="width: 100%; ">
               <tr>
-                <td style="width: 50%; "><h3>Select your Skills:</h3>
+                <td style="width: 50%; ">
+                  <h3>Select your Skills: </h3>
                   <input type="checkbox" name="htmlll" id="htmll" checked>
                   <label for="htmll">HTML</label>
                   <br>
@@ -73,7 +73,6 @@
 
                  <td>
                    <h3>Select your Rating: </h3>
-                   <div>
                    <label for="rang">HTML Rating: </label>
                    <input type="range" name="htmlrange" id="rang" list="markers">
                    <br>
@@ -92,7 +91,6 @@
                     <option value="75"></option>
                     <option value="100"></option>
                   </datalist>
-                  </div>
                 </td>
               </tr>
             </table>
@@ -113,12 +111,6 @@
           </select>
         </section>
         <br><hr>
-        <section>
-          <label for="remark"><strong>Mention Remarks: </strong></label> <br>
-          <textarea name="remarkk" id="remark" cols="30" rows="10"></textarea>
-        </section>
-
-        <hr>
 
         <section>
           <br>
@@ -133,10 +125,19 @@
 
         <section>
           <br>
-          <label for="urll"><strong>Paste your git url or any:&nbsp;&nbsp;  </strong> </label>
+          <label for="urll"><strong>Paste your project's git url or Other repo:&nbsp;&nbsp;  </strong> </label>
           <input type="url" name="urlll" id="urll">
           <br><br>
         </section>
+
+        <hr>
+
+        <section>
+          <label for="remark"><strong>Mention Certifications (If any): </strong></label> <br>
+          <textarea name="remarkk" id="remark" cols="30" rows="5"></textarea>
+        </section>
+
+        <hr>
 
     </main>
 

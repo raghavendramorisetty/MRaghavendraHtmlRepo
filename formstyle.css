@@ -21,16 +21,24 @@ hr{
     justify-content: center;
     flex-direction: column;
     display: flex;
+    gap:unset;
     background-color: rgb(164, 108, 216);
     
+}
+#heading h1{
+    margin-bottom: 0%;
 }
 legend{
     text-align: center;
     font-size: large;
 }
-#heading h1{
-    margin: auto;
-}
 #heading h2{
-    margin: auto;
+    margin-top:0%;
+}
+#p{
+    display: inline;
+}
+legend{
+    text-decoration: underline;
+    font-size:larger;
 }
