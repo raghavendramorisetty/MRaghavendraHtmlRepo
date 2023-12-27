@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Job Application</title>
+    <!-- <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    </style> -->
+  </head>
+
+  <body>
+    
+    <header>
+        <h1>Job Application</h1>
+    </header>
+
+    <hr><br>
+
+    <form method="post" action=""></form>
+
+    <main>
+        <section>
+
+            <label for="nam">Name: </label>
+            <input type="text" name="naam" id="nam" placeholder="Enter your full name">
+            <br><br>
+            <label for="mail">Email: </label>
+            <input type="email" name="mailu" id="mail" placeholder="Enter your valid mail">
+            <br><br>
+            <label for="pass">Password: </label>
+            <input type="password" name="passw" id="pass" placeholder="Enter the password">
+            <br><br>
+            <label for="mobno">Mobile.no: </label>
+            <input type="Number" name="mobile" id="mobno" placeholder="Enter your mobile no">
+            <br><br>
+            <label for="dat">DOB: </label>
+            <input type="date" name="birthdate" id="dat" placeholder="Enter you DOB">
+            <br><br>
+            <h2>Select your Gender: </h2>
+            <input type="radio" name="gender" id="malee">
+            <label for="malee">Male</label>
+            <br><br>
+            <input type="radio" name="gender" id="fmalee">
+            <label for="fmalee">Female</label>
+
+        </section>
+        <br>
+        <section>
+            <h3>Select your Skills:</h3>
+            <input type="checkbox" name="htmlll" id="htmll" checked>
+            <label for="htmll">HTML</label>
+            <br>
+            <input type="checkbox" name="Cssss" id="csss" checked>
+            <label for="csss">CSS</label>
+            <br>
+            <input type="checkbox" name="Jss" id="Jsss">
+            <label for="Jsss">Javascript</label>
+            <br>
+            <input type="checkbox" name="bssss" id="Bsss">
+            <label for="bsss">Bootstrap</label>
+        </section>
+        <br><br>
+        <section>
+          <label for="stat"><strong>Select your State: </strong> </label> <br><br>
+          <select multiple name="state" id="stat">
+            <option value="">Select</option>
+          <optgroup label="south India">
+            <option value="ap">AP</option>
+            <option value="ts">TS</option>
+          </optgroup>
+          <optgroup label="North India">
+            <option value="dlh">Delhi</option>
+            <option value="up">Uttar Pradesh</option>
+          </optgroup>
+          </select>
+        </section>
+        <br>
+        <section>
+          <label for="remark"><strong>Mention Remarks: </strong></label> <br>
+          <textarea name="remarkk" id="remark" cols="20" rows="10"></textarea>
+        </section>
+
+    </main>
+    </form>
+
+  </body>
+</html>
