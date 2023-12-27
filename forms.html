@@ -3,25 +3,29 @@
 
   <head>
     <title>Job Application</title>
-    <!-- <style>
-        body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-        }
-    </style> -->
+    <link rel="stylesheet" href="formstyle.css">
   </head>
 
   <body>
     
-    <header>
-        <h1>Job Application</h1>
-    </header>
-
     <hr><br>
 
-    <form method="post" action=""></form>
+    <form method="post" action="">
+
+    <fieldset>
+
+      <header>
+        <div id="heading">
+          <h1>Software Job Consultancy Services</h1> <br>
+          <h2>Maitrivanam, Ameerpet, Hyd</h2>
+          </div>
+          <br>
+        <legend><strong>JOB APPLICATION FORM</strong></legend>
+      </header>
+      
+      <br>
+      <hr>
+      <br>
 
     <main>
         <section>
@@ -42,29 +46,58 @@
             <input type="date" name="birthdate" id="dat" placeholder="Enter you DOB">
             <br><br>
             <h2>Select your Gender: </h2>
-            <input type="radio" name="gender" id="malee">
+            <input type="radio" name="gender" id="malee" checked>
             <label for="malee">Male</label>
             <br><br>
             <input type="radio" name="gender" id="fmalee">
             <label for="fmalee">Female</label>
 
         </section>
-        <br>
+        <br><hr>
         <section>
-            <h3>Select your Skills:</h3>
-            <input type="checkbox" name="htmlll" id="htmll" checked>
-            <label for="htmll">HTML</label>
-            <br>
-            <input type="checkbox" name="Cssss" id="csss" checked>
-            <label for="csss">CSS</label>
-            <br>
-            <input type="checkbox" name="Jss" id="Jsss">
-            <label for="Jsss">Javascript</label>
-            <br>
-            <input type="checkbox" name="bssss" id="Bsss">
-            <label for="bsss">Bootstrap</label>
+            <table style="width: 100%; display: flex; flex-direction:column;">
+              <tr>
+                <td style="width: 50%; "><h3>Select your Skills:</h3>
+                  <input type="checkbox" name="htmlll" id="htmll" checked>
+                  <label for="htmll">HTML</label>
+                  <br>
+                  <input type="checkbox" name="Cssss" id="csss">
+                  <label for="csss">CSS</label>
+                  <br>
+                  <input type="checkbox" name="Jss" id="Jsss">
+                  <label for="Jsss">Javascript</label>
+                  <br>
+                  <input type="checkbox" name="bssss" id="Bsss">
+                  <label for="bsss">Bootstrap</label>
+                </td>
+
+                 <td>
+                   <h3>Select your Rating: </h3>
+                   <div>
+                   <label for="rang">HTML Rating: </label>
+                   <input type="range" name="htmlrange" id="rang" list="markers">
+                   <br>
+                   <label for="rcsss">CSS Rating: </label>
+                   <input type="range" name="cssrating" id="rcsss" list="markers">
+                   <br>
+                   <label for="rjc">JavaScript Rating: </label>
+                   <input type="range" name="jsrange" id="rjc" list="markers">
+                   <br>
+                   <label for="rbss">Bootstrap Rating: </label>
+                   <input type="range" name="bssrating" id="rbss" list="markers">
+                   <datalist id="markers">
+                    <option value="0"></option>
+                    <option value="25"></option>
+                    <option value="50"></option>
+                    <option value="75"></option>
+                    <option value="100"></option>
+                  </datalist>
+                  </div>
+                </td>
+              </tr>
+            </table>
         </section>
-        <br><br>
+        <br><br><hr>
         <section>
           <label for="stat"><strong>Select your State: </strong> </label> <br><br>
           <select multiple name="state" id="stat">
@@ -79,14 +112,47 @@
           </optgroup>
           </select>
         </section>
-        <br>
+        <br><hr>
         <section>
           <label for="remark"><strong>Mention Remarks: </strong></label> <br>
-          <textarea name="remarkk" id="remark" cols="20" rows="10"></textarea>
+          <textarea name="remarkk" id="remark" cols="30" rows="10"></textarea>
+        </section>
+
+        <hr>
+
+        <section>
+          <br>
+          <label for="phot"><strong>Upload Your Photo: </strong></label> <br>
+          <input type="file" name="photoo" id="phot"> <br><br>
+          <label for="resum"><strong>Upload Your Resume: </strong> </label> <br>
+          <input type="file" name="Resumee" id="resum">
+          <br><br>
+        </section>
+
+        <hr>
+
+        <section>
+          <br>
+          <label for="urll"><strong>Paste your git url or any:&nbsp;&nbsp;  </strong> </label>
+          <input type="url" name="urlll" id="urll">
+          <br><br>
         </section>
 
     </main>
+
+
+    <footer>
+
+    <hr>
+    <input type="reset" name="resett" value="Reset Form" id="">
+    <input type="submit" name="submitt" value="Submit Form" id="">
+    </footer>
+
     </form>
+
+    
+
+  </fieldset>
 
   </body>
 </html>

@@ -1,0 +1,36 @@
+fieldset {
+  width: 70%;
+  /* display: flex; */
+  /* justify-content:baseline; */
+  /* align-items:baseline; */
+ align-self: center;
+ margin:0 auto;
+}
+body{
+    background-color: azure;
+}
+fieldset{
+    background-color: aquamarine;
+}
+hr{
+    border-color: black;
+}
+#heading{
+    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    background-color: rgb(164, 108, 216);
+    
+}
+legend{
+    text-align: center;
+    font-size: large;
+}
+#heading h1{
+    margin: auto;
+}
+#heading h2{
+    margin: auto;
+}
