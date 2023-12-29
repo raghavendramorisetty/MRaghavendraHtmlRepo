@@ -30,23 +30,23 @@
     <main>
         <section>
 
-            <label for="nam">Name: </label>
-            <input type="text" name="naam" id="nam" placeholder="Enter your full name">
+            <label for="nam">Name*: </label>
+            <input type="text" name="naam" id="nam" placeholder="Enter your full name" required>
             <br><br>
-            <label for="mail">Email: </label>
-            <input type="email" name="mailu" id="mail" placeholder="Enter your valid mail">
+            <label for="mail">Email*: </label>
+            <input type="email" name="mailu" id="mail" placeholder="Enter your valid mail" required>
             <br><br>
-            <label for="pass">Password: </label>
-            <input type="password" name="passw" id="pass" placeholder="Enter the password">
+            <label for="pass">Password*: </label>
+            <input type="password" name="passw" id="pass" placeholder="Enter the password" minlength="8" size="30" required>
             <br><br>
-            <label for="mobno">Mobile.no: </label>
-            <input type="Number" name="mobile" id="mobno" placeholder="Enter your mobile no">
+            <label for="mobno">Mobile.no*: </label>
+            <input type="Number" name="mobile" id="mobno" pattern="[1-9]\d{9}" placeholder="Enter your mobile no" required>
             <br><br>
-            <label for="dat">DOB: </label>
-            <input type="date" name="birthdate" id="dat" placeholder="Enter you DOB">
+            <label for="dat">DOB*: </label>
+            <input type="date" name="birthdate" id="dat" placeholder="Enter you DOB" required>
             <br><br>
-            <p id="p">Select your Gender: </p>
-            <input type="radio" name="gender" id="malee" checked>
+            <p id="p">Select your Gender*: </p>
+            <input type="radio" name="gender" id="malee" required>
             <label for="malee">Male</label>
             <input type="radio" name="gender" id="fmalee">
             <label for="fmalee">Female</label>
@@ -58,11 +58,11 @@
               <tr>
                 <td style="width: 50%; ">
                   <h3>Select your Skills: </h3>
-                  <input type="checkbox" name="htmlll" id="htmll" checked>
-                  <label for="htmll">HTML</label>
+                  <input type="checkbox" name="htmlll" id="htmll" checked required>
+                  <label for="htmll">HTML*</label>
                   <br>
-                  <input type="checkbox" name="Cssss" id="csss">
-                  <label for="csss">CSS</label>
+                  <input type="checkbox" name="Cssss" id="csss" checked required>
+                  <label for="csss">CSS*</label>
                   <br>
                   <input type="checkbox" name="Jss" id="Jsss">
                   <label for="Jsss">Javascript</label>
@@ -114,8 +114,8 @@
 
         <section>
           <br>
-          <label for="phot"><strong>Upload Your Photo: </strong></label> <br>
-          <input type="file" name="photoo" id="phot"> <br><br>
+          <label for="phot"><strong>Upload Your Photo*: </strong></label> <br>
+          <input type="file" name="photoo" id="phot" required> <br><br>
           <label for="resum"><strong>Upload Your Resume: </strong> </label> <br>
           <input type="file" name="Resumee" id="resum">
           <br><br>
