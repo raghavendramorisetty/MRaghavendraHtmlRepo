@@ -37,7 +37,7 @@
             <input type="email" name="mailu" id="mail" placeholder="Enter your valid mail" required>
             <br><br>
             <label for="pass">Password*: </label>
-            <input type="password" name="passw" id="pass" placeholder="Enter the password" minlength="8" size="30" required>
+            <input type="password" name="passw" id="pass" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()-_=+{};:,<.>]).{8,}$" title="Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one digit, and one special character"  placeholder="Enter the password" minlength="8" size="30" required>
             <br><br>
             <label for="mobno">Mobile.no*: </label>
             <input type="Number" name="mobile" id="mobno" pattern="[1-9]\d{9}" placeholder="Enter your mobile no" required>
